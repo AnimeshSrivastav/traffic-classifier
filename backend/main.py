@@ -48,7 +48,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.mount("/static", StaticFiles(directory="static"), name="static")
 
 @app.get("/")
 async def home():
@@ -79,3 +78,4 @@ async def predict(file: UploadFile = File(...)):
         predicted_class = predicted.item()
 
     return JSONResponse(content={"predicted_class": int(predicted_class)})
+
