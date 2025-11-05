@@ -72,7 +72,7 @@ document.getElementById("predictBtn").addEventListener("click", async () => {
   formData.append("file", file);
 
   try {
-    const res = await fetch("http://127.0.0.1:8000/predict", {
+    const res = await fetch("https://traffic-classifier-xvqk.onrender.com/predict", {
       method: "POST",
       body: formData,
     });
@@ -91,3 +91,4 @@ document.getElementById("predictBtn").addEventListener("click", async () => {
     alert("Error predicting image.");
   }
 });
+
