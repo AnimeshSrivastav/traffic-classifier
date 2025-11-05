@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Traffic Sign Classifier 🚦</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Traffic Sign Classifier 🚗</h1>
+    <p>Upload a traffic sign image to get its prediction</p>
+
+    <div class="upload-box">
+      <input type="file" id="fileInput" accept="image/*" />
+      <button id="predictBtn">Predict</button>
+    </div>
+
+    <div class="output">
+      <img id="preview" src="" alt="Preview" class="preview" />
+      <div id="resultContainer">
+        <h3 id="result"></h3>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
